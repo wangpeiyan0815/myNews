@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#000"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/loginFrag_ivwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/loginFrag_ivqq"
+                android:layout_marginLeft="34dp"
+                android:layout_marginStart="34dp"
+                android:layout_toEndOf="@+id/loginFrag_ivqq"
+                android:layout_toRightOf="@+id/loginFrag_ivqq"
+                android:src="@drawable/qqicon_login_profile" />
+
+            <TextView
+                android:id="@+id/loginFrag_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginFrag_ivqq"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:text="登录推荐更精准"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/loginFrag_ivqq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wixinicon_login_profile"
+                android:layout_alignTop="@+id/loginFrag_ivPhone"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/loginFrag_ivPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:src="@drawable/cellphoneicon_login_profile"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/loginFrag_textView"
+                android:layout_toStartOf="@+id/loginFrag_textView"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/loginFrag_ll_collect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/loginFrag_collect_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/favoriteicon_profile" />
+
+            <TextView
+                android:id="@+id/loginFrag_collect_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="收藏"
+                android:textColor="#888"
+                android:textStyle="normal" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/loginFrag_ll_night"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/loginFrag_night_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nighticon_profile" />
+
+            <TextView
+                android:id="@+id/loginFrag_night_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="夜间"
+                android:textColor="#888"
+                android:textStyle="normal" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/loginFrag_ll_system"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/loginFrag_system_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setupicon_profile" />
+
+            <TextView
+                android:id="@+id/loginFrag_system_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="系统设置"
+                android:textColor="#888"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"></ListView>
+</LinearLayout>
